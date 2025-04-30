@@ -1,0 +1,42 @@
+{
+  "name": "fantasy-game-next-react",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "homepage": "https://github.com/lucashdp/fantasy-game-test#readme",
+  "bugs": {
+    "url": "https://github.com/lucashdp/fantasy-game-test/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucashdp/fantasy-game-test.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "next.config.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "^15.3.1",
+    "react": "^18.3.1",
+    "react-dom": "18.x",
+    "swr": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "22.15.3",
+    "@types/react": "^19.1.2",
+    "@types/react-dom": "^19.1.2",
+    "autoprefixer": "^10.0.0",
+    "msw": "^2.7.5",
+    "postcss": "^8.0.0",
+    "tailwindcss": "^3.0.0",
+    "typescript": "^4.9.0"
+  }
+}
