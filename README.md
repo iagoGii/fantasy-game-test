@@ -133,7 +133,7 @@ Foi identificado e corrigido um erro de hidratação do React no layout principa
 
 ---
 
-## Testes
+## ✅ Testes
 
 ### Frameworks Utilizados
 - **Vitest**: Para testes unitários (alternativa moderna ao Jest, com 100% de compatibilidade)
