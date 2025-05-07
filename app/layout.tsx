@@ -14,7 +14,7 @@ export default function RootLayout({
   readonly children: ReactNode;
 }) {
   return (
-    <html lang="pt-BR">
+    <html lang="pt-BR" suppressHydrationWarning>
       <body className="bg-gray-50 min-h-screen flex flex-col">
         <Navbar />
         <main className="flex-1 bg-gray-50 py-6">

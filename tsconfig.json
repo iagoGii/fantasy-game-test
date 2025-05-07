@@ -1,11 +1,17 @@
 {
   "compilerOptions": {
+    "types": [
+      "vitest",
+      "vitest/globals",
+      "node"
+    ],
     "target": "ES2020",
-    "module": "esnext",
+    "module": "Node16",
     "moduleResolution": "node16",
     "jsx": "preserve",
     "strict": true,
     "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
@@ -29,6 +35,7 @@
     "**/*.tsx",
     "app/**/*",
     "mocks/**/*",
+    "components/**/*",
     "next-env.d.ts",
     ".next/types/**/*.ts"
   ],
