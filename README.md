@@ -209,6 +209,39 @@ Os testes E2E cobrem os seguintes fluxos principais:
    - Valida que os jogadores comprados aparecem na funcionalidade "Meu Time" com os detalhes corretos.
 
 ---
+
+## Continuous Integration (CI) Pipeline
+
+![GitHub Actions](https://img.shields.io/badge/GitHub-Actions-blue?logo=githubactions&logoColor=white)
+
+Este projeto utiliza um pipeline de Integração Contínua (CI) configurado com GitHub Actions. Abaixo está o passo a passo do que é realizado no pipeline:
+
+1. **Checkout do Código**:
+   - O código do repositório é clonado para o ambiente de execução do GitHub Actions.
+
+2. **Configuração do Node.js**:
+   - O Node.js é configurado na versão 18 para garantir compatibilidade com o projeto.
+
+3. **Instalação de Dependências**:
+   - Todas as dependências do projeto são instaladas utilizando `npm install`.
+
+4. **Execução de Testes Unitários**:
+   - Os testes unitários são executados com o Vitest, incluindo a geração de relatórios de cobertura de código com a flag `--coverage`.
+
+5. **Inicialização do Servidor de Desenvolvimento**:
+   - O servidor de desenvolvimento é iniciado em segundo plano com o comando `npm run dev`.
+
+6. **Aguardando o Servidor**:
+   - O pipeline aguarda que o servidor esteja acessível em `http://localhost:3000` utilizando a ferramenta `wait-on`.
+
+7. **Execução de Testes de Integração (Cypress)**:
+   - Os testes de integração são executados com o Cypress para validar o comportamento do sistema em um ambiente simulado.
+
+Este pipeline garante que o código seja testado automaticamente em cada push ou pull request para a branch `main`, ajudando a manter a qualidade do código e a prevenir regressões.
+
+---
+
 ## 📄 Licença
 
 Projeto para fins educacionais e de demonstração.
+
